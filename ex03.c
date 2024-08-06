@@ -1,11 +1,13 @@
 #include <stdio.h>
- 
-int main() {
- 
-    int A,B,SOMA;
-    scanf("%d", &A);
-    scanf("%d", &B);
-    SOMA = A + B;
-    printf("SOMA = %d\n", SOMA );
-    return 0;
+
+int main(){
+
+    float A[100];
+
+    for (int i = 0; i < 100; i++){
+        scanf("%f", &A[i]);
+        if(A[i] <= 10){
+            printf("A[%d] = %.1f\n", i, A[i]);
+        }
+    }
 }
