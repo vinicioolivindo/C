@@ -1,25 +1,21 @@
 #include <stdio.h>
-#include <stdbool.h>
 #include <string.h>
 
 int main() {
-    char palavra[100];
-    bool repetida = false;
+    char op[25];
 
-    printf("Digite uma palavra: "); scanf("%s", palavra);
+    while(fgets(op, sizeof(op), stdin)) {
+        op[strcspn(op, "\n")] = 0;
 
-    for (int i = 0; palavra[i] != '\0'; i++) {
-        for (int j = i + 1; palavra[j] != '\0'; j++) {
-            if (palavra[i] == palavra[j]) {
-                repetida = true; break;
-            }
+        if(strcmp(op, "esquerda") == 0) {
+            printf("ingles\n");
+        } else if(strcmp(op, "direita") == 0) {
+            printf("frances\n");
+        } else if(strcmp(op, "nenhuma") == 0) {
+            printf("portugues\n");
+        } else if(strcmp(op, "as duas") == 0) {
+            printf("caiu\n");
         }
-        if (repetida) break;
-    }
-    if (repetida) {
-        printf("A palavra contem duas ou mais  letras repetidas.\n");
-    } else {
-        printf("A palavra nao contém duas letras repetidas.\n");
     }
 
     return 0;
