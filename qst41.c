@@ -2,7 +2,7 @@
 #include <string.h>
 #define caracteres 21
 
-char removeSpace(char* string)
+void removeSpace(char* string)
 {
     if (string[strlen(string) - 1] == '\n')
     {
