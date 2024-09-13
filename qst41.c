@@ -2,7 +2,7 @@
 #include <string.h>
 #define caracteres 21
 
-void removeSpace(char* string)
+void removeNewLine(char* string)
 {
     if (string[strlen(string) - 1] == '\n')
     {
@@ -14,11 +14,13 @@ int main()
 {
     char string01[caracteres], string02[caracteres];
 
-    fgets(string01, sizeof(string01), stdin);
-    fgets(string02, sizeof(string02), stdin);
+    printf("Digite a primeira string (ate 20 caracteres): ");
+    fgets(string01, caracteres, stdin);
+    printf("Digite a segunda string (ate 20 caracteres): ");
+    fgets(string02, caracteres, stdin);
 
-    removeSpace(string01);
-    removeSpace(string02);
+    removeNewLine(string01);
+    removeNewLine(string02);
 
     printf("A primeira string lida foi: %s\nE sua segunda letra eh: %c \n", string01, string01[1]);
     printf("A segunda string lida foi: %s\nE sua segunda letra eh: %c", string02, string02[1]);
