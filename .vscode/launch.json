@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/vinic/Documents/estudos/C",
-      "program": "c:/Users/vinic/Documents/estudos/C/build/Debug/outDebug",
+      "cwd": "c:/Users/vinic/OneDrive/Documentos/estudos/C/estrutura-de-dados",
+      "program": "c:/Users/vinic/OneDrive/Documentos/estudos/C/estrutura-de-dados/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
