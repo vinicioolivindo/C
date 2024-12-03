@@ -51,7 +51,7 @@ TFuncionario empresa_ler(){
         f.nome = (char*)malloc(50*(sizeof(char)));
         scanf("%s", f.nome);
 
-        printf("Digite a classe: ");
+        printf("Digite a classess: ");
         scanf("%d", &f.classe);
 
         printf("Digite as horas normais: ");
