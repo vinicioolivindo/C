@@ -1,14 +1,14 @@
-#ifndef _empresa_
-#define _empresa_
+#ifndef __empresa__h
+#define __empresa__h
 
-typedef struct funcionario TFuncionario, *PFuncionario;
+typedef struct funcionario TFuncionario, *PFuncionarios;
 
-PFuncionarios empresa_criar(int qntdeFuncionarios);
-void empresa_registraFuncionario(PFuncionarios cadastro, int totalFuncionarios);
-void empresa_exibirFuncionarios(PFuncionarios cadastro, int totalFuncionarios);
-void empresa_exibirFuncionario(PFuncionarios cadastro, int inscricao);
-void empresa_contraCheque(PFuncionarios cadastro, int inscricao);
-void empresa_folhaCompleta(PFuncionarios cadastro, int totalFuncionarios);
-void empresa_destruir(PFuncionarios cadastro);
+PFuncionarios empresa_criar(int qtdeFuncionarios);
+void          empresa_registraFuncionario(PFuncionarios cadastro, int total);
+void          empresa_exibirFuncionarios(PFuncionarios cadastro, int total);
+void          empresa_exibirFuncionario(PFuncionarios cadastro, int inscricao);
+void          empresa_contraCheque(PFuncionarios cadastro, int total, int inscricao, float salarioReferenciaPorHoras);
+void          empresa_folhaCompleta(PFuncionarios cadastro, int total);
+void          empresa_destruir(PFuncionarios cadastro, int total);
 
 #endif
